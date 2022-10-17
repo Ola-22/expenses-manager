@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue-color:#6776AF;
+    --gray-color: #ACACAC;
+    --black-light: #4A4A4A;
+    --dark-gray: #707070;
+    --dark-blue: #273685;
+    --light-gray:#F9FAFF;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Article Top */
+
+.content-wrapper{
+    width: 90%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+section > article:first-of-type{
+    display: flex;
+    margin-top: 117px;
+}
+
+section > article:first-of-type > div{
+    flex: 1;
+    display: flex;
+}
+section > article:first-of-type .form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+section > article:first-of-type .form-container > span{
+  color: var(--blue-color);
+  font-weight: bold;
+}
+
+section > article:first-of-type .form-container > p{
+    color: var(--gray-color);
+    line-height: 33px;
+    margin-top: 17px;
+    font-size: .5em;
+  }
+
+  section > article:first-of-type .form-container > form{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 38px; */
+    margin-top: 64px;
+  }
+
+  section > article:first-of-type .form-container > form > div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+  section > article:first-of-type .form-container > form .bottom-form{
+    margin-top: 38px;
+  }
+  section > article:first-of-type .form-container > form > div > .input-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    color: var(--black-light);
+  }
+
+  section > article:first-of-type .form-container > form > div > .input-container > label{
+   font-size: .5em;
+   text-transform: capitalize;
+  }
+
+  section > article:first-of-type .form-container > form > div > .input-container > input{
+   border: 1px solid var(--dark-gray);
+   border-radius: 5px;
+   height: 50px;
+   padding: 0 10px;
+   font-size: .4em;
+   }
+
+   section > article:first-of-type .form-container > form > button{
+    background-color: var(--dark-blue);
+    width: 260px;
+    height: 55px;
+    align-self: flex-end;
+    color: #fff;
+    border-radius: 27.5px;
+    border: none;
+    font-size: .5em;
+    text-transform: capitalize;
+    margin-top: 27px;
+   }
+
+   /* Article Bottom */
+
+   section > article:last-of-type{
+       box-shadow: 0 0 14px rgba(0, 0, 0, 0.08);
+       border-radius: 15px;
+       background-color: var(--light-gray);
+       padding: 0 65px;
+       overflow-x: auto;
+       padding-bottom: 50px;
+       margin-bottom: 55px;
+   }
+   section > article:last-of-type .table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 161px;
+}
+
+section > article:last-of-type .table thead{
+    border-bottom: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    padding: 14px 0;
+}
+
+section > article:last-of-type .table  th{
+  font-size: .5em;
+  flex: 1;
+  width: 25%;
+  vertical-align: bottom;
+  height: 67px;
+  padding-bottom: 14px;
+  text-transform: capitalize;
+}
+
+section > article:last-of-type .table  th:first-child{
+    text-align: left;
+  }
+
+  section > article:last-of-type table tbody tr{
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+section > article:last-of-type table td{
+    font-size: .4em;
+    text-align: center;
+    height: 80px;
+  }
+
+  section > article:last-of-type table td:first-of-type{
+    text-align: left;
+  }
+
+  /* Media Query */
+
+  @media (max-width: 1300px) {
+    section > article:first-of-type{
+       flex-direction: column;
+       margin-top: 50px;
+    }
+    
+    section > article:first-of-type .form-container > p{
+        line-height: 20px;
+
+      }
+    
+    .content-wrapper{
+        font-size: 30px;
+    }
+    section > article:last-of-type{
+        padding: 0 7%;
+    }
+
+    section > article:first-of-type .form-container > form{
+        margin-top: 30px;
+    }
+
+    section > article:first-of-type .form-container > form .bottom-form{
+        margin-top: 16px;
+    }
+  }
